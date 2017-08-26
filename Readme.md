@@ -56,5 +56,5 @@ Test Setup
  ![Stale Model Data](https://raw.github.com/shauno/doctrine-stale-demo/master/assets/user-id-1.png)
 
 Even though the code waited on the lock, and the actual query returned the
-updated record (age = 35), because the entity was loaded previously `$user`
-will be hydrated with the "stale" data.
+updated record (age = 35), because the entity was loaded previously on line
+ 20, `$user` will be hydrated with that "stale" data.
